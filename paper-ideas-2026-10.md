@@ -131,3 +131,50 @@
 
 EEG：
 - [EEG-to-Music 重建 2026](https://arxiv.org/abs/2606.04040v1) · [PRiSE-EEG foundation model](https://arxiv.org/pdf/2605.18085) · [ErrP in HRC 2026 mini-review](https://www.frontiersin.org/journals/neuroergonomics/articles/10.3389/fnrgo.2026.1769098/full) · [Salazar-Gomez 2017 ErrP 机器人](https://arxiv.org/pdf/1708.01465) · [音乐家错误检测 Bi-LSTM](https://arxiv.org/pdf/2411.12400) · [演奏者 EEG 状态解码 2021](https://public-pages-files-2025.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2021.626723/epub) · [爵士即兴 flow 2024](https://www.sciencedirect.com/science/article/pii/S0028393224000393) · [NIME 2026 想象运动声音化](https://nime.org/proc/nime2026_98/) · [NeuroHarmonium](https://dl.acm.org/doi/10.1145/3811427.3811501) · [2016 GT 第三只鼓手臂 + EEG 计划](https://news.gatech.edu/news/2016/02/17/wearable-robot-transforms-musicians-three-armed-drummers)
+
+---
+
+# 第二轮：以"机器人自己的艺术表达"为核心重新定位
+
+## 为什么要重新定位
+
+第一轮是在技术赛道上找空白。但钢琴机器人赛道上有 KAIST、Berkeley 等灵巧手组，纯技术拼不过。
+真正的生存空间：**问题本身得是只有懂音乐的人才会提出来的问题**，产出最终必须是艺术性的。
+
+关键观察：现有所有"表现力"工作都在让机器人更像人，听感实验结论都是"仍不如人"。这是死路。
+机器人的艺术表达只能建立在人做不到的地方，并且要有审美意图。
+
+## "机器人自己的艺术表达"的可操作定义
+
+1. 不是对人类演奏者的模仿
+2. 表达来源于机器人自己的身体和感知
+3. 听众能感知到这是有意图、有一致性的风格
+
+每一条对应一个可测量实验，避免审稿人说"空"。
+
+## 候选 Idea（第二轮）
+
+### ★ Idea 1：后 Nancarrow 问题 —— 人类演奏不了的音乐，如何"有表情"地演奏
+- Nancarrow 为自动钢琴写了人类弹不了的曲子，但自动钢琴没有表情
+- 现有 expressive rendering 模型全从人类演奏数据学，碰到人类弹不了的乐段就没有 ground truth
+- 研究问题：如何把乐句规律从"手的习惯"抽象到"音乐结构"，再外推到人类演奏分布之外
+- 硬件：手上的钢琴机器人；产出：方法 + 为机器人写的新作品 + 专业听众实验
+- 推荐作为第一篇
+
+### ★ Idea 2：审美来自听众的大脑，而非模仿人
+- EEG 放在听众身上；机器人即兴/演绎时以听众神经参与度、期望违背信号为奖励，演化出自己的风格
+- 这个风格不属于任何人类演奏者，是"什么能打动大脑"直接优化出来的
+- 可行性参考：2025 iScience 做到 23 名观众同时录 EEG
+- 推荐作为第二篇，用 Idea 1 的机器人和作品当刺激材料
+
+### Idea 3：身体决定乐句 —— 音乐与机械臂运动联合生成
+- 不是先生成音乐再执行，而是音乐与运动在一个生成模型里联合产生，运动学约束进入生成过程
+- 机械臂的乐句天然带着身体的"口音"，如萨克斯乐句被呼吸塑造
+- 产出：NIME 论文 + 演出
+
+### Idea 4：机械声作为乐器
+- 电机、舵机、碰撞声作为表达的一部分，类比人的呼吸声和琴键噪音
+- 偏艺术，技术量轻，作为 Idea 3 演出的一部分，不单独发
+
+## 投稿去处
+NIME（论文 + 演出）、ICCC（计算创造力）、CHI（创意工具）、HRI alt.HRI、Leonardo、Computer Music Journal
